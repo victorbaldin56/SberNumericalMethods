@@ -1,9 +1,9 @@
-#include "simple_logf.h"
+#include "snm_logf.h"
 
 #include <errno.h>
 #include <math.h>
 
-float simple_logf(float x) {
+float snm_logf(float x) {
   if (x <= 0) {
     errno = ERANGE;
     return NAN;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "simple_logf.h"
+#include "snm_logf.h"
 
 int main() {
   float x;
@@ -9,6 +9,6 @@ int main() {
     fprintf(stderr, "Could not read float from stdin\n");
     return EXIT_FAILURE;
   }
-  printf("%f\n", simple_logf(x));
+  printf("%f\n", snm_logf(x));
   return 0;
 }

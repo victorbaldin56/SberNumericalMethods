@@ -2,9 +2,11 @@
 
 #include <stdbool.h>
 
+// clang-format off
 static Point2 createRandomPoint2(double min_x, double max_x,
                                  double min_y, double max_y);
-static bool isPointInsideCircle(const Point2* point, const Circle2* circle);
+// clang-format on
+static bool isPointInsideCircle(const Point2 *point, const Circle2 *circle);
 
 double mcpi_monteCarloPi(size_t num_points) {
   Circle2 circle = {.center = {0.0, 0.0}, .radius = 1.0};
@@ -16,3 +18,10 @@ double mcpi_monteCarloPi(size_t num_points) {
     }
   }
 }
+
+// clang-format off
+static Point2 createRandomPoint2(double min_x, double max_x,
+                                 double min_y, double max_y) {}
+// clang-format on
+
+static bool isPointInsideCircle(const Point2 *point, const Circle2 *circle) {}
